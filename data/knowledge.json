@@ -1,0 +1,140 @@
+{
+    "target": [
+      {
+        "name": "Sỏi thận",
+        "rules": {
+          "1": "đau âm ỉ",
+          "2": "đau thắt lưng",
+          "3": "cơn đau quặn thận",
+          "4": "đau dữ dội niệu quản",
+          "5": "đái buốt",
+          "6": "đái ra máu",
+          "7": "đái ra sỏi",
+          "8": "đau gây chướng bụng",
+          "9": "buồn nôn"
+        }
+      },
+      {
+        "name": "Sỏi niệu quản",
+        "rules": {
+          "1": "cơn đau quặn thận",
+          "2": "đái gắt",
+          "3": "đái buốt",
+          "4": "đái ra máu",
+          "5": "nước tiểu đục",
+          "6": "bế tắc đường tiểu",
+          "7": "khó tiểu",
+          "8": "suy thận mãn tính",
+          "9": "sình bụng",
+          "10": "đầy hơi",
+          "11": "ói mửa",
+          "12": "ăn khong tiêu",
+          "13": "mỏi lưng"
+      }
+      },
+      {
+        "name": "Sỏi bàng quang",
+        "rules": {
+          "1": "đái rắt",
+          "2": "đái nhiều lần",
+          "3": "tia nước tiểu yếu",
+          "4": "đái ra máu",
+          "5": "khó tiểu",
+          "6": "đái không kiểm soát"
+        }
+      },
+      {
+        "name": "Nang đơn thận",
+        "rules": {
+          "1": "đau thắt lưng",
+          "2": "tức nặng vùng thắt lưng",
+          "3": "tăng huyết áp",
+          "4": "thận to",
+          "5": "đái rắt",
+          "6": "đái buốt",
+          "7": "đái ra máu",
+          "8": "nước tiểu đục"
+        }
+      },
+      {
+        "name": "Vết thương thận",
+        "rules": {
+          "1": "đau nhiều vùng ở thận",
+          "2": "đau khắp bụng",
+          "3": "đái ra máu",
+          "4": "vết bầm chỗ chấn thương",
+          "5": "hố thắt lưng đau",
+          "6": "bụng chướng hơi",
+          "7": "da xanh",
+          "8": "mạch đập nhanh",
+          "9": "huyết áp hạ"
+        }
+      },
+      {
+        "name": "Ung thư bàng quang",
+        "rules": {
+          "1": "đái ra máu",
+          "2": "đái rắt",
+          "3": "đái buốt",
+          "4": "đái khó",
+          "5": "đái nhiều lân",
+          "6": "đau vùng hông",
+          "7": "khối u vùng hạ vị",
+          "8": "mất cân nặng",
+          "9": "đau bụng",
+          "10": "đau xương",
+          "11": "khối u chỗ trực tràng"
+        }
+      },
+      {
+        "name": "Phì đại tuyến tiền liệt",
+        "rules": {
+          "1": "đái gấp",
+          "2": "đái rắt",
+          "3": "tiểu đêm",
+          "4": "tiểu rặn",
+          "5": "tiểu són",
+          "6": "tiểu nhiều lân",
+          "7": "tiểu vội, không nhinj được",
+          "8": "tiểu không thành tia, dòng nước tiểu yếu",
+          "9": "tiểu xong có cảm giác đi không hết"
+        }
+      },
+      {
+        "name": "Ung thư tuyến tiền liệt",
+        "rules": {
+          "1": "đái khó",
+          "2": "đái nhiều lần",
+          "3": "đái vội",
+          "4": "bí tiểu",
+          "5": "đái ra máu",
+          "6": "xuất tinh ra máu",
+          "7": "cơn đau quặn thận",
+          "8": "đau xương vùng chậu hông",
+          "9": "đau cột sống",
+          "10": "phù nền chân, chi dưới",
+          "11": "đau thần kinh toạ",
+          "12": "suy sụp toàn thân"
+        }
+      },
+      {
+        "name": "Tràn dịch màng tinh hoàn",
+        "rules": {
+          "1": "bìu to tăng dần",
+          "2": "khó sờ nắn được tinh hoàn",
+          "3": "mào tinh có màu tối"
+        }
+      },
+      {
+        "name" : "Xoắn tinh hoàn",
+        "rules": {
+          "1": "đau bìu đột ngột",
+          "2": "ban đem bật thức dậy",
+          "3": "đái bìu dữ dội kèm theo cảm giác buồn nôn",
+          "4": "dau bìu liên tục không thành cơn",
+          "5": "bìu to dần",
+          "6": "da bìu đỏ hoặc bầm tím"
+        }
+      }
+    ]
+  }
