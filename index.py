@@ -38,6 +38,7 @@ def add():
     matchesRules = matchesRules_temp
     return matchesRules
 def addForPropose() :
+    matchedTargets.clear()
     for know in knowlageBase:
         for rule in know.getRules():
             for user in userInput.getRules():
@@ -68,7 +69,7 @@ def askQuestion(mess):
 def getProposes():
     proposes = list()
     count_target = 0
-    targets = list(sorted(addForPropose().items(), key=lambda item : -item[1]))[1::2]
+    targets = list(sorted(addForPropose().items(), key=lambda item : -item[1]))
     print(targets)
     if (len(targets) >=2) :
         while (count_target < 2) :
