@@ -26,14 +26,16 @@ def add():
                 if(rule == user):
                     matchedTargets.append(know)
                     break
-    
+    matchesRules_temp = dict()
     for matchedTarget in matchedTargets:
             match = 0
             for rule in matchedTarget.getRules():
                 for userRule in userInput.getRules():
                     if rule == userRule:
                         match += 1
-            matchesRules[matchedTarget.getTarget()] = round((match / len(matchedTarget.getRules())) * 100)
+            matchesRules_temp[matchedTarget.getTarget()] = round((match / len(matchedTarget.getRules())) * 100)
+    matchesRules_temp = sorted(matchesRules_temp.items(), key = lambda item : -item[1])
+    matchesRules = matchesRules_temp
     return matchesRules
 def addForPropose() :
     for know in knowlageBase:
@@ -42,15 +44,15 @@ def addForPropose() :
                 if(rule == user):
                     matchedTargets.append(know)
                     break
-    
+    matchKnowledge = {}
     for matchedTarget in matchedTargets:
             match = 0
             for rule in matchedTarget.getRules():
                 for userRule in userInput.getRules():
                     if rule == userRule:
                         match += 1
-            matchesRules[matchedTarget] = round((match / len(matchedTarget.getRules())) * 100)
-    return matchesRules
+            matchKnowledge[matchedTarget] = round((match / len(matchedTarget.getRules())) * 100)
+    return matchKnowledge
 """trả lời"""
 def askQuestion(mess):
     print(mess)
