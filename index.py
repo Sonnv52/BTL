@@ -35,6 +35,22 @@ def add():
                         match += 1
             matchesRules[matchedTarget.getTarget()] = round((match / len(matchedTarget.getRules())) * 100)
     return matchesRules
+def addForPropose() :
+    for know in knowlageBase:
+        for rule in know.getRules():
+            for user in userInput.getRules():
+                if(rule == user):
+                    matchedTargets.append(know)
+                    break
+    
+    for matchedTarget in matchedTargets:
+            match = 0
+            for rule in matchedTarget.getRules():
+                for userRule in userInput.getRules():
+                    if rule == userRule:
+                        match += 1
+            matchesRules[matchedTarget] = round((match / len(matchedTarget.getRules())) * 100)
+    return matchesRules
 """trả lời"""
 def askQuestion(mess):
     print(mess)
@@ -49,11 +65,20 @@ def askQuestion(mess):
 """Đề xuất"""
 def getProposes():
     proposes = list()
-    for i in matchedTargets:
-       proposes.append(str(i.getOneRule()))
-    proposes_set = set(proposes)
-    proposes_list = list(proposes_set)
-    return proposes_list[0:4]
+    count_target = 0
+    targets = list(sorted(addForPropose().items(), key=lambda item : -item[1]))[1::2]
+    print(targets)
+    if (len(targets) >=2) :
+        while (count_target < 2) :
+            proposes.append(targets[count_target][0].getOneRule())
+            proposes.append(targets[count_target][0].getOneRule())
+            count_target +=1
+    else :
+        proposes.append(targets[count_target][0].getOneRule())
+        proposes.append(targets[count_target][0].getOneRule())
+    print(proposes)
+    proposes_list = list(set(proposes))
+    return proposes_list
 
 """-------------------------------------------Logic----------------------"""
 
@@ -65,13 +90,14 @@ def home_1():
 def home():
     return render_template('index.html')
 @app.route("/get")
-def getRespone():
+def getResponse():
     message = request.args['message']
     reply = askQuestion(message)
     return jsonify(reply)
 @app.route("/getPropose")
 def getPropose():
     list_proposes = getProposes()
+    print(list_proposes)
     return ", ".join(list_proposes)
 if __name__ == "__main__":
     app.run(debug=True)

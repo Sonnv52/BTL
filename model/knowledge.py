@@ -78,4 +78,4 @@ class Knowledge:
     def clearRules(self):
         self.__rules= list()
     def getOneRule(self):
-        return random.choice(self.__rules)
+        return random.choice(self.__rules).getRule()
