@@ -1,14 +1,10 @@
 from flask import Flask, render_template, request, jsonify
 knowledgeBaseFile = ".\data\knowledge.json"
-clauseBaseFile = ".\data\clause.json"
 from model.knowledge import Knowledge
-from parsers.clauseParser import ClauseParser
 from parsers.knowledgeParser import KnowledgeBaseParser
 """-------------------------------------------Logic----------------------"""
 knowlages = KnowledgeBaseParser()
-clauses = ClauseParser()
 knowlageBase = knowlages.getKnowledgeBase(knowledgeBaseFile)
-clauseBase = clauses.getClauseBase(clauseBaseFile)
 """Khai báo"""
 matchedTargets = list()
 matchesRules = dict()
